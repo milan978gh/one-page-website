@@ -30,6 +30,18 @@ p{
   line-height: 1.8rem;
   letter-spacing: .1rem;
 }
+.section-title{
+  color: #03034b;
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: .3rem;
+  text-align: center;
+}
+.section-title span{
+  color: orangered;
+}
 /* hero section */
 #hero{
   background-image: url(../img/hero-bg.jpg);
@@ -87,18 +99,6 @@ p{
   margin: 0 auto;
   padding: 100px 0;
 }
-#services .service-title{
-  color: #03034b;
-  font-size: 4rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  letter-spacing: .3rem;
-  text-align: center;
-}
-#services .service-title span{
-  color: orangered;
-}
 #services .service-top p{
   text-align: center;
   margin: 20px 0;
@@ -108,6 +108,7 @@ p{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 #services .service-item{
   flex-basis: 80%;
@@ -116,7 +117,7 @@ p{
   align-items: flex-start;
   justify-content: center;
   padding: 20px;
-  background-image: url(../img/services-bg2.jpg);
+  background-image: url(../img/services-bg.jpg);
   background-size: cover;
   border-radius: 20px;
   margin: 10px 5px;
@@ -149,3 +150,7 @@ p{
   color: orangered;
 }
 /* end services section */
+
+/* projects section */
+
+/* end projects section */
