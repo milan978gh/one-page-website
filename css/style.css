@@ -17,6 +17,19 @@ a{
   align-items: center;
   justify-content: center;
 }
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+p{
+  color: #03034b;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.8rem;
+  letter-spacing: .1rem;
+}
 /* hero section */
 #hero{
   background-image: url(../img/hero-bg.jpg);
@@ -70,11 +83,12 @@ a{
 #services .services{
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 100px 0;
 }
 #services .service-title{
+  color: #03034b;
   font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -86,11 +100,8 @@ a{
   color: orangered;
 }
 #services .service-top p{
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  margin-top: 20px;
-  letter-spacing: .1rem;
+  text-align: center;
+  margin: 20px 0;
 }
 #services .service-bottom{
   display: flex;
@@ -104,13 +115,14 @@ a{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
   background-image: url(../img/services-bg2.jpg);
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 10px 5px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 #services .service-item::after{
   content: '';
@@ -119,11 +131,21 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(yellow, red);
+  background-image: linear-gradient(red, yellow);
   opacity: .3;
   z-index: -1;
 }
-#services .service-bottom icon{
-  
+#services .service-bottom .icon{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+#services .service-item h2{
+  color: #03034b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+#services .service-item h2 span{
+  color: orangered;
 }
 /* end services section */
