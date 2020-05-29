@@ -110,6 +110,11 @@ p{
   justify-content: center;
   margin-top: 30px;
 }
+#services .service-bottom .icon{
+  width: 100px;
+  height: 100px;
+  /* margin-bottom: 10px; */
+}
 #services .service-item{
   flex-basis: 80%;
   display: flex;
@@ -135,11 +140,6 @@ p{
   background-image: linear-gradient(red, yellow);
   opacity: .3;
   z-index: -1;
-}
-#services .service-bottom .icon{
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
 }
 #services .service-item h2{
   color: #03034b;
