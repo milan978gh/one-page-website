@@ -6,6 +6,7 @@
 html{
   font-size: 10px;
   font-family: tahoma, sans-serif;
+  color: #03034b;
 }
 a{
   text-decoration: none;
@@ -23,7 +24,6 @@ img{
   object-fit: cover;
 }
 p{
-  color: #03034b;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
@@ -31,9 +31,8 @@ p{
   letter-spacing: .1rem;
 }
 .section-title{
-  color: #03034b;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 10px;
   letter-spacing: .3rem;
@@ -64,7 +63,6 @@ p{
 #hero h1{
   display: block;
   width: fit-content;
-  color: #03034b;
   font-size: 4rem;
   position: relative;
 }
@@ -86,7 +84,6 @@ p{
   transition: .3s ease background-color;
 }
 #hero .cta:hover{
-  color: #03034b;
   background-color: orangered;
 }
 /* end hero section */
@@ -113,7 +110,6 @@ p{
 #services .service-bottom .icon{
   width: 100px;
   height: 100px;
-  /* margin-bottom: 10px; */
 }
 #services .service-item{
   flex-basis: 80%;
@@ -142,7 +138,6 @@ p{
   z-index: -1;
 }
 #services .service-item h2{
-  color: #03034b;
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -152,5 +147,65 @@ p{
 /* end services section */
 
 /* projects section */
-
+#projects .projects{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: rgba(255, 165, 0, .5);
+}
+#projects .projects-header h1{
+  margin-bottom: 50px;
+}
+#projects .all-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#projects .project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#projects .project-info{
+  background-color: rgba(255, 69, 0, .5);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+#projects .project-info h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#projects .project-img{
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+#projects .project-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, red, yellow);
+  opacity: .5;
+}
+#projects .project-img img{
+  transition: .3s ease transform;
+}
+#projects .project-item:hover .project-img img{
+  transform: scale(1.1);
+}
 /* end projects section */
