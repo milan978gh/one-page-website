@@ -92,7 +92,7 @@ p{
 #services .services{
   flex-direction: column;
   text-align: center;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -216,7 +216,7 @@ p{
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 0;
 }
 #about .colm-left{
   width: 300px;
@@ -255,10 +255,51 @@ p{
 }
 /* end about section */
 
+/* contact section */
+#contact .contact{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 165, 0, .5);
+}
+#contact .all-items{
+  width: 400px;
+}
+#contact .contact-item{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 18px 0 #0000004c;
+  transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover{
+  box-shadow: 0 0 3px 0 #0000004c;
+}
+#contact .icon{
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#contact .contact-info h1{
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  margin-bottom: 10px;
+}
+#contact .contact-info h2{
+  font-size: 1.6rem;
+}
+/* end contact section */
+
 footer{
   background: rgba(255, 165, 0, .5);
 }
 footer p{
   text-align: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
