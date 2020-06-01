@@ -56,6 +56,7 @@ span{
 .cta:hover{
   background-color: orangered;
 }
+
 /* hero section */
 #hero{
   background-image: url(../img/hero-bg.jpg);
@@ -86,7 +87,6 @@ span{
   padding: 0 10px;
   background-color: #03034b;
 }
-/* end hero section */
 
 /* services section */
 #services .services{
@@ -144,7 +144,6 @@ span{
 #services .service-item h2 span{
   color: orangered;
 }
-/* end services section */
 
 /* projects section */
 #projects .projects{
@@ -208,7 +207,6 @@ span{
 #projects .project-item:hover .project-img img{
   transform: scale(1.1);
 }
-/* end projects section */
 
 /* about section */
 #about .about{
@@ -216,7 +214,7 @@ span{
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 #about .colm-left{
   width: 300px;
@@ -238,6 +236,9 @@ span{
   height: 98%;
   z-index: -1;
 }
+#about .colm-right{
+  width: 100%;
+}
 #about .colm-right h2{
   font-size: 2rem;
   font-weight: 400;
@@ -253,7 +254,6 @@ span{
   font-weight: 600;
   margin-bottom: 40px;
 }
-/* end about section */
 
 /* contact section */
 #contact .contact{
@@ -294,11 +294,8 @@ span{
 #contact .contact-info h2{
   font-size: 1.6rem;
 }
-/* end contact section */
 
 /* footer section */
-footer{
-}
 footer .footer{
   min-height: 200px;
   flex-direction: column;
@@ -314,4 +311,91 @@ footer h2{
   margin-bottom: 30px;
   letter-spacing: .1rem;
 }
-/* end footer section */
+
+/* media query tablet */
+@media screen and (min-width:700px){
+  .cta{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 20px 60px;
+  }
+  .section-title{
+    font-size: 6rem;
+  }
+
+  /* hero */
+  #hero h1{
+    font-size: 7rem;
+  }
+
+  /* services */
+#services .service-item{
+  flex-basis: 45%;
+  margin: 2.5%;
+}
+  /* project */
+  #projects .project-item{
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    border-radius: 0;
+  }
+  #projects .project-item:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  #projects .all-projects .project-info{
+    height: 100%;
+  }
+  #projects .all-projects .project-img{
+    height: 100%;
+  }
+
+  /* about */
+  #about .about{
+    flex-direction: row;
+  }
+  #about .colm-left{
+    width: 600px;
+    height: 350px;
+    padding-left: 60px;
+  }
+  #about .colm-right{
+    text-align: left;
+    padding: 30px;
+  }
+  #about .colm-right h1{
+    text-align: left;
+  }
+  #about .colm-right p{
+    text-align: left;
+  }
+
+  /* contact */
+  #contact .contact{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+  #contact .all-items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  #contact .contact-item{
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #contact .contact-item .icon{
+    width: 80px;
+    height: 80px;
+  }
+  /* media query laptop */
+@media screen and(min-width:) {
+  
+}
+}
